@@ -13,6 +13,8 @@
 		11D1E355231B363600207058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D1E354231B363600207058 /* Assets.xcassets */; };
 		11D1E358231B363600207058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D1E356231B363600207058 /* LaunchScreen.storyboard */; };
 		11D1E35B231B363600207058 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E35A231B363600207058 /* main.m */; };
+		11D1E369231B37C100207058 /* UIColors+SGExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E368231B37C100207058 /* UIColors+SGExtras.swift */; };
+		11D1E36B231B37D300207058 /* UIFont+SGExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E36A231B37D300207058 /* UIFont+SGExtras.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		11D1E359231B363600207058 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11D1E35A231B363600207058 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		11D1E367231B37C100207058 /* SettersGettersDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SettersGettersDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		11D1E368231B37C100207058 /* UIColors+SGExtras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+SGExtras.swift"; sourceTree = "<group>"; };
+		11D1E36A231B37D300207058 /* UIFont+SGExtras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+SGExtras.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,10 @@
 		11D1E34A231B363500207058 /* SettersGettersDemo */ = {
 			isa = PBXGroup;
 			children = (
+				11D1E363231B375500207058 /* Assets */,
 				11D1E34E231B363500207058 /* ViewController.h */,
 				11D1E34F231B363500207058 /* ViewController.m */,
 				11D1E351231B363500207058 /* Main.storyboard */,
-				11D1E354231B363600207058 /* Assets.xcassets */,
 				11D1E356231B363600207058 /* LaunchScreen.storyboard */,
 				11D1E362231B370900207058 /* SupportingFiles */,
 			);
@@ -79,6 +83,48 @@
 				11D1E35A231B363600207058 /* main.m */,
 			);
 			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		11D1E363231B375500207058 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				11D1E364231B375C00207058 /* ImagesFiles */,
+				11D1E366231B376D00207058 /* Colors */,
+				11D1E365231B376900207058 /* Fonts */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		11D1E364231B375C00207058 /* ImagesFiles */ = {
+			isa = PBXGroup;
+			children = (
+				11D1E354231B363600207058 /* Assets.xcassets */,
+			);
+			path = ImagesFiles;
+			sourceTree = "<group>";
+		};
+		11D1E365231B376900207058 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				11D1E36C231B38A900207058 /* Files */,
+				11D1E36A231B37D300207058 /* UIFont+SGExtras.swift */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		11D1E366231B376D00207058 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				11D1E368231B37C100207058 /* UIColors+SGExtras.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		11D1E36C231B38A900207058 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,6 +201,8 @@
 			files = (
 				11D1E350231B363500207058 /* ViewController.m in Sources */,
 				11D1E35B231B363600207058 /* main.m in Sources */,
+				11D1E369231B37C100207058 /* UIColors+SGExtras.swift in Sources */,
+				11D1E36B231B37D300207058 /* UIFont+SGExtras.swift in Sources */,
 				11D1E34D231B363500207058 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
