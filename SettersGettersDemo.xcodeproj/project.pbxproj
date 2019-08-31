@@ -8,21 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		11D1E34D231B363500207058 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E34C231B363500207058 /* AppDelegate.m */; };
-		11D1E350231B363500207058 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E34F231B363500207058 /* ViewController.m */; };
 		11D1E353231B363500207058 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D1E351231B363500207058 /* Main.storyboard */; };
 		11D1E355231B363600207058 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D1E354231B363600207058 /* Assets.xcassets */; };
 		11D1E358231B363600207058 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D1E356231B363600207058 /* LaunchScreen.storyboard */; };
 		11D1E35B231B363600207058 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E35A231B363600207058 /* main.m */; };
 		11D1E369231B37C100207058 /* UIColors+SGExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E368231B37C100207058 /* UIColors+SGExtras.swift */; };
 		11D1E36B231B37D300207058 /* UIFont+SGExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E36A231B37D300207058 /* UIFont+SGExtras.swift */; };
+		11D1E371231B3E8700207058 /* SGSettersGetters.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E370231B3E8700207058 /* SGSettersGetters.m */; };
+		11D1E373231B3E9100207058 /* SGSettersGetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E372231B3E9100207058 /* SGSettersGetters.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11D1E348231B363500207058 /* SettersGettersDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettersGettersDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11D1E34B231B363500207058 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11D1E34C231B363500207058 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		11D1E34E231B363500207058 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		11D1E34F231B363500207058 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		11D1E352231B363500207058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11D1E354231B363600207058 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11D1E357231B363600207058 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -31,6 +30,9 @@
 		11D1E367231B37C100207058 /* SettersGettersDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SettersGettersDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		11D1E368231B37C100207058 /* UIColors+SGExtras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+SGExtras.swift"; sourceTree = "<group>"; };
 		11D1E36A231B37D300207058 /* UIFont+SGExtras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+SGExtras.swift"; sourceTree = "<group>"; };
+		11D1E36F231B3E8700207058 /* SGSettersGetters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGSettersGetters.h; sourceTree = "<group>"; };
+		11D1E370231B3E8700207058 /* SGSettersGetters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGSettersGetters.m; sourceTree = "<group>"; };
+		11D1E372231B3E9100207058 /* SGSettersGetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGSettersGetters.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				11D1E363231B375500207058 /* Assets */,
-				11D1E34E231B363500207058 /* ViewController.h */,
-				11D1E34F231B363500207058 /* ViewController.m */,
+				11D1E36E231B3E5800207058 /* SettersGetters */,
 				11D1E351231B363500207058 /* Main.storyboard */,
 				11D1E356231B363600207058 /* LaunchScreen.storyboard */,
 				11D1E362231B370900207058 /* SupportingFiles */,
@@ -125,6 +126,16 @@
 			children = (
 			);
 			path = Files;
+			sourceTree = "<group>";
+		};
+		11D1E36E231B3E5800207058 /* SettersGetters */ = {
+			isa = PBXGroup;
+			children = (
+				11D1E36F231B3E8700207058 /* SGSettersGetters.h */,
+				11D1E370231B3E8700207058 /* SGSettersGetters.m */,
+				11D1E372231B3E9100207058 /* SGSettersGetters.swift */,
+			);
+			path = SettersGetters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,11 +210,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11D1E350231B363500207058 /* ViewController.m in Sources */,
 				11D1E35B231B363600207058 /* main.m in Sources */,
 				11D1E369231B37C100207058 /* UIColors+SGExtras.swift in Sources */,
 				11D1E36B231B37D300207058 /* UIFont+SGExtras.swift in Sources */,
+				11D1E371231B3E8700207058 /* SGSettersGetters.m in Sources */,
 				11D1E34D231B363500207058 /* AppDelegate.m in Sources */,
+				11D1E373231B3E9100207058 /* SGSettersGetters.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
