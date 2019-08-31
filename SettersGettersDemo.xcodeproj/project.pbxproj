@@ -97,6 +97,7 @@
 		11D1E340231B363500207058 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SG;
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = "Guillermo Sáenz Urday";
 				TargetAttributes = {
