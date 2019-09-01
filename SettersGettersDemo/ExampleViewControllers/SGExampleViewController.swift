@@ -39,4 +39,8 @@ extension SGExampleViewController {
     @IBAction func doExample2Action(_ sender: Any) {
         
     }
+    
+    @IBAction func doExample3Action(_ sender: Any) {
+        
+    }
 }
