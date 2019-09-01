@@ -6,26 +6,26 @@
 //  Copyright © 2019 Guillermo Sáenz Urday. All rights reserved.
 //
 
-@import Foundation;
+@import UIKit;
 
-//////////////////////////////////////////
-// Cheat table                          //
-//////////////////////////////////////////
-// Atomicity:                           //
-// atomic       |   nonatomic           //
-// ------------------------------------ //
-// Memory Management:                   //
-// strong       |   weak                //
-// copy         |   assign              //
-// retain       |   unsafe_unretained   //
-// ------------------------------------ //
-// Writability:                         //
-// readwrite    |   readonly            //
-// ------------------------------------ //
-// Custom Setters and getters for auto  //
-// synthesize:                          //
-// getter=      |   setter=             //
-//////////////////////////////////////////
+//////////////////////////////////////////////////
+// Cheat table                                  //
+//////////////////////////////////////////////////
+// Atomicity:                                   //
+// atomic (default)     |   nonatomic           //
+// -------------------------------------------- //
+// Memory Management:                           //
+// strong (default)     |   weak                //
+// copy                 |   assign              //
+// retain               |   unsafe_unretained   //
+// -------------------------------------------- //
+// Writability:                                 //
+// readwrite (default)  |   readonly            //
+// -------------------------------------------- //
+// Custom Setters and getters for auto          //
+// synthesize:                                  //
+// getter=              |   setter=             //
+//////////////////////////////////////////////////
 
 @interface SGPropertyAttributes : NSObject
 
@@ -46,5 +46,18 @@
 
 @property (retain) id retainVariable;
 @property (unsafe_unretained) id unsafe_unretainedVariable;
+
+#pragma mark - Examples
+
+//////////////////////////////////////////////////
+// At least 1 type of attribute per group need  //
+// to be present in a declaration of a property,//
+// if you don't declare it then clang does it   //
+// for you adding the default values.           //
+//////////////////////////////////////////////////
+@property (nonatomic, copy, readonly) NSString *myString;
+@property (nonatomic, copy, readonly) NSNumber *myNumber;
+@property (nonatomic, assign, readonly, getter=isFake) BOOL fake;
+@property (nonatomic, weak) IBOutlet UIButton *myButton;
 
 @end
