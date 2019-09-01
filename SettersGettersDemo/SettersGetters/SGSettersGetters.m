@@ -8,20 +8,21 @@
 
 #import "SGSettersGetters.h"
 
-@implementation SGManuallySynthetizedSettersGetters
-
-@synthesize manuallySynthetizedMyString = _iVarManuallySynthetizedMyString;
+@implementation SGiVarSettersGetters {
+#pragma mark - Instance variables (iVars)
+    NSString *_myString;
+}
 
 #pragma mark - Setters
 
-- (void)setManuallySynthetizedMyString:(NSString *)manuallySynthetizedMyString {
-    _iVarManuallySynthetizedMyString = manuallySynthetizedMyString;
+- (void)setMyString:(NSString *)myString {
+    _myString = myString;
 }
 
 #pragma mark - Getters
 
-- (NSString *)manuallySynthetizedMyString {
-    return _iVarManuallySynthetizedMyString;
+- (NSString *)myString {
+    return _myString;
 }
 
 #pragma mark - Initializers
@@ -29,51 +30,79 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.manuallySynthetizedMyString = @"My string by setters";
+        [self setMyString:@"My string by setters"];
         
-        NSLog(@"ivar manuallySynthetizedMyString: %@", _iVarManuallySynthetizedMyString);
-        NSLog(@"getter manuallySynthetizedMyString: %@", self.manuallySynthetizedMyString);
+        NSLog(@"ivar _myString: %@", _myString);
+        NSLog(@"getter myString: %@", [self myString]);
         
-        _iVarManuallySynthetizedMyString = @"My string by ivar";
+        _myString = @"My string by ivar";
         
-        NSLog(@"getter manuallySynthetizedMyString: %@", self.manuallySynthetizedMyString);
-        NSLog(@"ivar manuallySynthetizedMyString: %@", _iVarManuallySynthetizedMyString);
+        NSLog(@"getter myString: %@", [self myString]);
+        NSLog(@"ivar _myString: %@", _myString);
     }
     return self;
 }
 
 @end
 
-@implementation SGAutomaticallySynthetizedSettersGetters
 
-//@synthesize autoSynthetizedMyString = _autoSynthetizedMyString;
+@implementation SGManuallySynthetizedSettersGetters {
+#pragma mark - Instance variables (iVars)
+    NSString *_myString;
+}
+
+#pragma mark - @synthesize declarations
+@synthesize myString = _myString;
 
 #pragma mark - Setters
 
-//- (void)setAutoSynthetizedMyString:(NSString *)autoSynthetizedMyString {
-//    _autoSynthetizedMyString = autoSynthetizedMyString;
-//}
+- (void)setMyString:(NSString *)myString {
+    _myString = myString;
+}
 
 #pragma mark - Getters
 
-//- (NSString *)autoSynthetizedMyString {
-//    return _autoSynthetizedMyString;
-//}
+- (NSString *)myString {
+    return _myString;
+}
 
 #pragma mark - Initializers
 
 - (instancetype)init {
     self = [super init];
     if (self) {
-        self.autoSynthetizedMyString = @"My string by setters";
+        self.myString = @"My string by setters";
         
-        NSLog(@"ivar autoSynthetizedMyString: %@", _autoSynthetizedMyString);
-        NSLog(@"getter autoSynthetizedMyString: %@", self.autoSynthetizedMyString);
+        NSLog(@"ivar _myString: %@", _myString);
+        NSLog(@"getter myString: %@", self.myString);
         
-        _autoSynthetizedMyString = @"My string by ivar";
+        _myString = @"My string by ivar";
         
-        NSLog(@"getter autoSynthetizedMyString: %@", self.autoSynthetizedMyString);
-        NSLog(@"ivar autoSynthetizedMyString: %@", _autoSynthetizedMyString);
+        NSLog(@"getter myString: %@", self.myString);
+        NSLog(@"ivar _myString: %@", _myString);
+    }
+    return self;
+}
+
+@end
+
+
+@implementation SGAutomaticallySynthetizedSettersGetters
+
+#pragma mark - Initializers
+
+- (instancetype)init {
+    self = [super init];
+    if (self) {
+        self.myString = @"My string by setters";
+        
+        NSLog(@"ivar _myString: %@", _myString);
+        NSLog(@"getter myString: %@", self.myString);
+        
+        _myString = @"My string by ivar";
+        
+        NSLog(@"getter myString: %@", self.myString);
+        NSLog(@"ivar _myString: %@", _myString);
     }
     return self;
 }
