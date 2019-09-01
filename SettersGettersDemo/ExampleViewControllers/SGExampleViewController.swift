@@ -45,6 +45,6 @@ extension SGExampleViewController {
     }
     
     @IBAction func doExample4Action(_ sender: Any) {
-        
+        _ = SGSettersGetters()
     }
 }
