@@ -15,6 +15,7 @@
 		11D1E369231B37C100207058 /* UIColors+SGExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E368231B37C100207058 /* UIColors+SGExtras.swift */; };
 		11D1E36B231B37D300207058 /* UIFont+SGExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E36A231B37D300207058 /* UIFont+SGExtras.swift */; };
 		11D1E377231C192900207058 /* SGExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E376231C192900207058 /* SGExampleViewController.swift */; };
+		11D1E37B231C274F00207058 /* SGPropertyAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E37A231C274F00207058 /* SGPropertyAttributes.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		11D1E368231B37C100207058 /* UIColors+SGExtras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+SGExtras.swift"; sourceTree = "<group>"; };
 		11D1E36A231B37D300207058 /* UIFont+SGExtras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+SGExtras.swift"; sourceTree = "<group>"; };
 		11D1E376231C192900207058 /* SGExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGExampleViewController.swift; sourceTree = "<group>"; };
+		11D1E379231C274F00207058 /* SGPropertyAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGPropertyAttributes.h; sourceTree = "<group>"; };
+		11D1E37A231C274F00207058 /* SGPropertyAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGPropertyAttributes.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 			isa = PBXGroup;
 			children = (
 				11D1E363231B375500207058 /* Assets */,
+				11D1E378231C271200207058 /* PropertyAttributes */,
 				11D1E375231C190700207058 /* ExampleViewControllers */,
 				11D1E351231B363500207058 /* Main.storyboard */,
 				11D1E356231B363600207058 /* LaunchScreen.storyboard */,
@@ -131,6 +135,15 @@
 				11D1E376231C192900207058 /* SGExampleViewController.swift */,
 			);
 			path = ExampleViewControllers;
+			sourceTree = "<group>";
+		};
+		11D1E378231C271200207058 /* PropertyAttributes */ = {
+			isa = PBXGroup;
+			children = (
+				11D1E379231C274F00207058 /* SGPropertyAttributes.h */,
+				11D1E37A231C274F00207058 /* SGPropertyAttributes.m */,
+			);
+			path = PropertyAttributes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +221,7 @@
 				11D1E35B231B363600207058 /* main.m in Sources */,
 				11D1E377231C192900207058 /* SGExampleViewController.swift in Sources */,
 				11D1E369231B37C100207058 /* UIColors+SGExtras.swift in Sources */,
+				11D1E37B231C274F00207058 /* SGPropertyAttributes.m in Sources */,
 				11D1E36B231B37D300207058 /* UIFont+SGExtras.swift in Sources */,
 				11D1E34D231B363500207058 /* AppDelegate.m in Sources */,
 			);
