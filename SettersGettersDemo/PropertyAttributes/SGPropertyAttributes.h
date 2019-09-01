@@ -55,6 +55,7 @@
 // if you don't declare it then clang does it   //
 // for you adding the default values.           //
 //////////////////////////////////////////////////
+@property NSArray *myArray;
 @property (nonatomic, copy, readonly) NSString *myString;
 @property (nonatomic, copy, readonly) NSNumber *myNumber;
 @property (nonatomic, assign, readonly, getter=isFake) BOOL fake;
