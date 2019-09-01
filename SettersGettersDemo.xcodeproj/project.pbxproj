@@ -16,6 +16,7 @@
 		11D1E36B231B37D300207058 /* UIFont+SGExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E36A231B37D300207058 /* UIFont+SGExtras.swift */; };
 		11D1E371231B3E8700207058 /* SGSettersGetters.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E370231B3E8700207058 /* SGSettersGetters.m */; };
 		11D1E373231B3E9100207058 /* SGSettersGetters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E372231B3E9100207058 /* SGSettersGetters.swift */; };
+		11D1E377231C192900207058 /* SGExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E376231C192900207058 /* SGExampleViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		11D1E36F231B3E8700207058 /* SGSettersGetters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGSettersGetters.h; sourceTree = "<group>"; };
 		11D1E370231B3E8700207058 /* SGSettersGetters.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGSettersGetters.m; sourceTree = "<group>"; };
 		11D1E372231B3E9100207058 /* SGSettersGetters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGSettersGetters.swift; sourceTree = "<group>"; };
+		11D1E376231C192900207058 /* SGExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGExampleViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			children = (
 				11D1E363231B375500207058 /* Assets */,
 				11D1E36E231B3E5800207058 /* SettersGetters */,
+				11D1E375231C190700207058 /* ExampleViewControllers */,
 				11D1E351231B363500207058 /* Main.storyboard */,
 				11D1E356231B363600207058 /* LaunchScreen.storyboard */,
 				11D1E362231B370900207058 /* SupportingFiles */,
@@ -136,6 +139,14 @@
 				11D1E372231B3E9100207058 /* SGSettersGetters.swift */,
 			);
 			path = SettersGetters;
+			sourceTree = "<group>";
+		};
+		11D1E375231C190700207058 /* ExampleViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				11D1E376231C192900207058 /* SGExampleViewController.swift */,
+			);
+			path = ExampleViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -211,6 +222,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				11D1E35B231B363600207058 /* main.m in Sources */,
+				11D1E377231C192900207058 /* SGExampleViewController.swift in Sources */,
 				11D1E369231B37C100207058 /* UIColors+SGExtras.swift in Sources */,
 				11D1E36B231B37D300207058 /* UIFont+SGExtras.swift in Sources */,
 				11D1E371231B3E8700207058 /* SGSettersGetters.m in Sources */,
