@@ -43,4 +43,8 @@ extension SGExampleViewController {
     @IBAction func doExample3Action(_ sender: Any) {
         _ = SGAutomaticallySynthetizedSettersGetters()
     }
+    
+    @IBAction func doExample4Action(_ sender: Any) {
+        
+    }
 }
