@@ -33,14 +33,14 @@ class SGExampleViewController: UIViewController {
 extension SGExampleViewController {
     
     @IBAction func doExample1Action(_ sender: Any) {
-        
+        _ = SGiVarSettersGetters()
     }
     
     @IBAction func doExample2Action(_ sender: Any) {
-        
+        _ = SGManuallySynthetizedSettersGetters()
     }
     
     @IBAction func doExample3Action(_ sender: Any) {
-        
+        _ = SGAutomaticallySynthetizedSettersGetters()
     }
 }
