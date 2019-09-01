@@ -39,7 +39,6 @@
                                         <rect key="frame" x="0.0" y="156" width="72" height="30"/>
                                         <state key="normal" title="Example 3"/>
                                         <connections>
-                                            <action selector="doExample2Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qj8-Kt-LVr"/>
                                             <action selector="doExample3Action:" destination="BYZ-38-t0r" eventType="touchUpInside" id="G7N-6p-9da"/>
                                         </connections>
                                     </button>
