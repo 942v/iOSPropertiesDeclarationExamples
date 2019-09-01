@@ -6,12 +6,16 @@
 //  Copyright © 2019 Guillermo Sáenz Urday. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+@import Foundation;
 
-NS_ASSUME_NONNULL_BEGIN
+@interface SGManuallySynthetizedSettersGetters : NSObject
 
-@interface SGSettersGetters : NSObject
+@property (nonatomic) NSString *manuallySynthetizedMyString;
 
 @end
 
-NS_ASSUME_NONNULL_END
+@interface SGAutomaticallySynthetizedSettersGetters : NSObject
+
+@property (nonatomic) NSString *autoSynthetizedMyString;
+
+@end
