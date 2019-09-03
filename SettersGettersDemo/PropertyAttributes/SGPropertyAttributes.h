@@ -139,7 +139,6 @@
 //////////////////////////////////////////////////
 @property (copy) id copiedVariable;
 
-
 //////////////////////////////////////////////////
 // Memory Management:                           //
 // Pre-ARC era you shouldn't use them in any    //
@@ -183,7 +182,6 @@
 @property (readwrite) id readwriteVariable;
 @property (readonly) id readonlyVariable;
 
-
 //////////////////////////////////////////////////
 // Custom Setters and getters for auto          //
 // synthesize:                                  //
@@ -197,8 +195,7 @@
 // help you more than that. If you know a good  //
 // use for it then hit me up!                   //
 //                                              //
-// Swift note: Yep, public, private or          //
-// fileprivate attributes.                      //
+// Swift note: Yep, set, get, willSet, didSet   //
 //                                              //
 // Links:                                       //
 // No link sorry.                               //
