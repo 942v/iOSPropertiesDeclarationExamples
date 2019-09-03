@@ -15,6 +15,8 @@
 		11D1E369231B37C100207058 /* UIColors+SGExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E368231B37C100207058 /* UIColors+SGExtras.swift */; };
 		11D1E36B231B37D300207058 /* UIFont+SGExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E36A231B37D300207058 /* UIFont+SGExtras.swift */; };
 		11D1E377231C192900207058 /* SGExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E376231C192900207058 /* SGExampleViewController.swift */; };
+		11E21FBB231E0BA60041BD86 /* SGNullabilityObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E21FBA231E0BA60041BD86 /* SGNullabilityObjC.m */; };
+		11E21FBD231E0BB20041BD86 /* SGNullabilitySwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E21FBC231E0BB20041BD86 /* SGNullabilitySwift.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,9 @@
 		11D1E368231B37C100207058 /* UIColors+SGExtras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColors+SGExtras.swift"; sourceTree = "<group>"; };
 		11D1E36A231B37D300207058 /* UIFont+SGExtras.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+SGExtras.swift"; sourceTree = "<group>"; };
 		11D1E376231C192900207058 /* SGExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGExampleViewController.swift; sourceTree = "<group>"; };
+		11E21FB9231E0BA60041BD86 /* SGNullabilityObjC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGNullabilityObjC.h; sourceTree = "<group>"; };
+		11E21FBA231E0BA60041BD86 /* SGNullabilityObjC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGNullabilityObjC.m; sourceTree = "<group>"; };
+		11E21FBC231E0BB20041BD86 /* SGNullabilitySwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGNullabilitySwift.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				11D1E363231B375500207058 /* Assets */,
+				11E21FB8231E0B800041BD86 /* Nullability */,
 				11D1E375231C190700207058 /* ExampleViewControllers */,
 				11D1E351231B363500207058 /* Main.storyboard */,
 				11D1E356231B363600207058 /* LaunchScreen.storyboard */,
@@ -131,6 +137,16 @@
 				11D1E376231C192900207058 /* SGExampleViewController.swift */,
 			);
 			path = ExampleViewControllers;
+			sourceTree = "<group>";
+		};
+		11E21FB8231E0B800041BD86 /* Nullability */ = {
+			isa = PBXGroup;
+			children = (
+				11E21FB9231E0BA60041BD86 /* SGNullabilityObjC.h */,
+				11E21FBA231E0BA60041BD86 /* SGNullabilityObjC.m */,
+				11E21FBC231E0BB20041BD86 /* SGNullabilitySwift.swift */,
+			);
+			path = Nullability;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,11 +221,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11E21FBD231E0BB20041BD86 /* SGNullabilitySwift.swift in Sources */,
 				11D1E35B231B363600207058 /* main.m in Sources */,
 				11D1E377231C192900207058 /* SGExampleViewController.swift in Sources */,
 				11D1E369231B37C100207058 /* UIColors+SGExtras.swift in Sources */,
 				11D1E36B231B37D300207058 /* UIFont+SGExtras.swift in Sources */,
 				11D1E34D231B363500207058 /* AppDelegate.m in Sources */,
+				11E21FBB231E0BA60041BD86 /* SGNullabilityObjC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
