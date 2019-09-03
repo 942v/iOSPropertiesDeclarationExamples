@@ -191,11 +191,11 @@
 // getter and setter of the property.           //
 //                                              //
 // Silver bullet: I'm not going to lie I haven't//
-// used them, but I've seen pretty crazy stuff  //
-// to auto assign properties at parsing a json, //
-// crazy stuff, works like magic. I can't help  //
-// you more than that. If you know a good use   //
-// for it then hit me up!                       //
+// used the setter=, but I've seen pretty crazy //
+// stuff to auto assign properties at parsing a //
+// json, crazy stuff, works like magic. I can't //
+// help you more than that. If you know a good  //
+// use for it then hit me up!                   //
 //                                              //
 // Swift note: Yep, public, private or          //
 // fileprivate attributes.                      //

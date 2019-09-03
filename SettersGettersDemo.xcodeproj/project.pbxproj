@@ -16,6 +16,7 @@
 		11D1E36B231B37D300207058 /* UIFont+SGExtras.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E36A231B37D300207058 /* UIFont+SGExtras.swift */; };
 		11D1E377231C192900207058 /* SGExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E376231C192900207058 /* SGExampleViewController.swift */; };
 		11D1E37B231C274F00207058 /* SGPropertyAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D1E37A231C274F00207058 /* SGPropertyAttributes.m */; };
+		11E21FB7231E07480041BD86 /* SGExampleRetainCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = 11E21FB6231E07480041BD86 /* SGExampleRetainCycle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,8 @@
 		11D1E376231C192900207058 /* SGExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SGExampleViewController.swift; sourceTree = "<group>"; };
 		11D1E379231C274F00207058 /* SGPropertyAttributes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGPropertyAttributes.h; sourceTree = "<group>"; };
 		11D1E37A231C274F00207058 /* SGPropertyAttributes.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGPropertyAttributes.m; sourceTree = "<group>"; };
+		11E21FB5231E07480041BD86 /* SGExampleRetainCycle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SGExampleRetainCycle.h; sourceTree = "<group>"; };
+		11E21FB6231E07480041BD86 /* SGExampleRetainCycle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SGExampleRetainCycle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,8 +145,18 @@
 			children = (
 				11D1E379231C274F00207058 /* SGPropertyAttributes.h */,
 				11D1E37A231C274F00207058 /* SGPropertyAttributes.m */,
+				11E21FAF231E070B0041BD86 /* Example */,
 			);
 			path = PropertyAttributes;
+			sourceTree = "<group>";
+		};
+		11E21FAF231E070B0041BD86 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				11E21FB5231E07480041BD86 /* SGExampleRetainCycle.h */,
+				11E21FB6231E07480041BD86 /* SGExampleRetainCycle.m */,
+			);
+			path = Example;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +235,7 @@
 				11D1E377231C192900207058 /* SGExampleViewController.swift in Sources */,
 				11D1E369231B37C100207058 /* UIColors+SGExtras.swift in Sources */,
 				11D1E37B231C274F00207058 /* SGPropertyAttributes.m in Sources */,
+				11E21FB7231E07480041BD86 /* SGExampleRetainCycle.m in Sources */,
 				11D1E36B231B37D300207058 /* UIFont+SGExtras.swift in Sources */,
 				11D1E34D231B363500207058 /* AppDelegate.m in Sources */,
 			);

@@ -9,6 +9,8 @@
 import UIKit
 
 class SGExampleViewController: UIViewController {
+    
+    private var classA : SGExampleRetainCycleClassA?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,11 +35,17 @@ class SGExampleViewController: UIViewController {
 extension SGExampleViewController {
     
     @IBAction func doExample1Action(_ sender: Any) {
+        classA = SGExampleRetainCycleClassA()
+        let classB = SGExampleRetainCycleClassB()
+        let classC = SGExampleRetainCycleClassC()
         
+        classA?.classB = classB
+        classB.classC = classC
+        classC.classA = classA
     }
     
     @IBAction func doExample2Action(_ sender: Any) {
-        
+        classA = nil
     }
     
     @IBAction func doExample3Action(_ sender: Any) {
